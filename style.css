@@ -16,20 +16,24 @@
 
 html, body {
     font-family: var(--font1);
+    min-height: 100vh;
 }
 
 header {
     background-color: black;
     color: white;
-    padding: 50px;
     text-align: center;
-    height: 200px;
 }
 
 header h1 {
     font-family: var(--font2);
-    font-size: 3em;
+    padding-top: 50px;
+    font-size: 9vw;
     font-variant: small-caps;
+}
+
+header p {
+    padding-bottom: 50px;
 }
 
 a {
@@ -44,40 +48,38 @@ a:hover {
 
 main {
     font-family: var(--font3);
-    font-size: 1.5em;
 }
 
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 20px;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
 }
 
 section p {
-    padding-bottom: 1.5em;
+    padding-bottom: 2em;
 }
 
 .texto {
     background-color: white;
-    min-width: 320px;
+    color: black;
 }
 
 .background {
     background: black url('imagens/background001.jpg') right center no-repeat fixed;
+    color: white;
     background-size: cover;
-    height: 580px;
-    position: relative;
     box-shadow: inset 6px 6px 14px rgba(0, 0, 0, 0.368);
 }
 
 .background p {
     background-color: rgba(0, 0, 0, 0.47);
-    text-shadow: 2px 2px 1px rgb(0, 0, 0);
-    width: 310px;
-    color: white;
-    position: absolute;
-    top: 40px;
-    padding-left: 4px;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+    padding: 5px;
+    display: inline-block;
 }
 
 section.background:nth-last-child(2) {
